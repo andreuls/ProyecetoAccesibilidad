@@ -1,14 +1,14 @@
 :root {
-    --red: #e30c0c;
-    --grey: #5b595a;
-    --ligth-grey: #d1d1d1;
-    --pink: #f15b85;
+    --red: #940606;
+    --grey: #424242;
+    --ligth-grey: #494848;
+    --pink: #7c0627;
     --dark-pink: #a93f5d;
     --white: #fff;
     --black: #000;
     --gold: #dbd486;
     --brown: #5d4b1e;
-    --orange: #ffc506;
+    --orange: #000000;
     --blue: #0087c6;
     --font-base: 16px;
     --margin-auto: auto;
@@ -34,6 +34,12 @@ ul {
     width: 10px;
     height: 60px;
     color: var(--white);
+}
+
+video{
+    width: 550px;
+     height:320px;
+     border: none;
 }
 
 .delete{
@@ -79,6 +85,7 @@ aside,
     align-items: stretch;
     padding: var(--padding-20);
     border-bottom: solid var(--ligth-grey) 1px;
+    gap: 5px;
 }
 
 .youtube{
@@ -98,7 +105,16 @@ aside,
     top: -6px;
 }
 
-#article-box {
+.youtube iframe {
+    width: 560px; 
+    height: 315px;
+}
+
+.youtube {
+    margin-bottom: 20px; 
+}
+
+#article-box1, #article-box2, #article-box3, #article-box4, #article-box5 {
     width: 270px;
 }
 
@@ -387,7 +403,7 @@ form select {
     outline: none;
 }
 
-#sale1 {
+#sale1, #sale {
     position: relative;
     top: 30px;
     left: 50px;
@@ -479,7 +495,7 @@ form select {
     padding-top: 15px;
 }
 
-#bold {
+.bold {
     font-weight: bold;
     margin: var(--margin-20);
     font-size: 1rem;
@@ -497,12 +513,13 @@ form select {
 
 .top-bar {
     border-top: solid var(--ligth-grey) 1px;
+    border-bottom: solid var(--ligth-grey) 1px;
 }
 
 
 .pink {
     color: var(--pink);
-    text-decoration: none;
+    text-decoration: underline;
 
 }
 
@@ -583,7 +600,7 @@ form select {
 }
 
 .view-product {
-    color: var(--white);
+    color: var(--black);
     text-decoration: none;
 
 }
@@ -595,6 +612,10 @@ form select {
 
 .article-box:hover .box {
     background-color: var(--black);
+}
+
+.article-box:hover .view-product {
+    color: var(--white);
 }
 
 .article-box {
@@ -629,6 +650,14 @@ form select {
     padding: var(--padding-auto);
 }
 
+*:focus, .searcher:focus {
+    outline: 2px solid #fdfdfd; 
+}
+
+#subscribe:focus {
+    outline: 2px solid #0080ff; 
+}
+
 .product-section {
     margin: 0.1px;
 }
@@ -637,13 +666,21 @@ form select {
     margin: 5px;
 }
 
+#blue-point{
+    color: var(--blue);
+}
+
+#white-point{
+    color: var(--white);
+}
+
 .subscribe {
     border: none;
     color: var(--white);
     background-color: var(--blue);
     margin-left: 20px;
     margin-right: 155px;
-    font-size: 1rem;
+    font-size: 0.8rem;
 }
 
 .subscribe:focus {
@@ -695,7 +732,7 @@ form select {
 }
 
 .grey-text {
-    color: var(--grey);
+    color: var(--white);
     font-size: 1rem;
 }
 
@@ -971,7 +1008,7 @@ form select {
 }
 
 .point {
-    background-color: var(--grey);
+    background-color: var(--white);
     color: var(--grey);
     width: 100px;
     height: 1px;
